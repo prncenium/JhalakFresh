@@ -50,7 +50,15 @@ export default function Hero() {
     <section className="relative w-full min-h-[90vh] lg:h-[1110px] flex flex-col items-center justify-center pt-20 pb-32 overflow-hidden">
       
       {/* Background shape placeholder */}
-      <div className="absolute inset-0 z-0 bg-cover bg-bottom opacity-50" style={{ backgroundImage: "url('/assets/backgrounds/wavy-bg.png')" }}></div>
+      <div className="absolute inset-0 z-0 bg-cover bg-bottom " style={{ backgroundImage: "url('https://res.cloudinary.com/dbtfi1rbi/image/upload/v1772046687/ChatGPT_Image_Jan_4_2026_07_09_32_PM_1_yrku6o.png')" }}></div>
+      <div className="absolute bottom-0 left-0 w-full z-0 pointer-events-none leading-[0]">
+        <img 
+          // Replace this with your actual Cloudinary link or local path where you saved Vector 1.png
+          src="https://res.cloudinary.com/dbtfi1rbi/image/upload/v1772046545/Vector_1_ai1pw3.png" 
+          alt="Bottom Wave" 
+          className="w-full h-auto object-cover object-top"
+        />
+      </div>
 
       {/* Floating Badges Container
         Changed to absolute full-width (max 1728px) so the right-[px] values perfectly match your Zeplin screen.

@@ -5,6 +5,7 @@ import Navbar from './Sections/Navbar'
 import Hero from './Sections/Hero'
 import Philosophy from './Sections/Philosophy'
 import Testimonials from './Sections/Testimonials'
+import HowItWorks from './Sections/HowItWorks'
 
 function App() {
  
@@ -15,6 +16,7 @@ function App() {
       <Hero />
       <Philosophy />
       <Testimonials />
+      <HowItWorks />
     </main>
   )
 }

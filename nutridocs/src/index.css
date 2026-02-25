@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+/* 1. Tell the browser to load the font from your public folder */
+/* 1. Tell the browser to load the font from your public folder */
+@font-face {
+  font-family: 'JuicyAdviceDEMO';
+  /* Vite serves the public folder at the root (/) */
+  src: url('/juicyadviceDEMO.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+/* 2. Tell Tailwind to create a utility class called 'font-juicy' */
+@theme {
+  --font-juicy: "JuicyAdviceDEMO", sans-serif;
+  --font-inter: "Inter", sans-serif;
+  
+  --color-brand-green: #4A5D4F; 
+  --color-brand-light: #BFD799;
+}
+
+body {
+  background-color: #F8F7F4; 
+  overflow-x: hidden;
+}

@@ -6,6 +6,8 @@ import Hero from './Sections/Hero'
 import Philosophy from './Sections/Philosophy'
 import Testimonials from './Sections/Testimonials'
 import HowItWorks from './Sections/HowItWorks'
+import CallToAction from './Sections/CallToAction'
+import Footer from './Sections/Footer'
 
 function App() {
  
@@ -17,6 +19,8 @@ function App() {
       <Philosophy />
       <Testimonials />
       <HowItWorks />
+      <CallToAction />
+      <Footer />
     </main>
   )
 }

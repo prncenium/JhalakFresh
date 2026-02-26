@@ -8,6 +8,7 @@ import Testimonials from './Sections/Testimonials'
 import HowItWorks from './Sections/HowItWorks'
 import CallToAction from './Sections/CallToAction'
 import Footer from './Sections/Footer'
+import ScienceSimplified from './Sections/Science'
 
 function App() {
  
@@ -18,6 +19,7 @@ function App() {
       <Hero />
       <Philosophy />
       <Testimonials />
+      <ScienceSimplified />
       <HowItWorks />
       <CallToAction />
       <Footer />

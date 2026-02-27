@@ -1,29 +1,42 @@
-import { useState } from 'react'
-
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import './App.css'
+
+// 1. Import your persistent layout components
 import Navbar from './Sections/Navbar'
-import Hero from './Sections/Hero'
-import Philosophy from './Sections/Philosophy'
-import Testimonials from './Sections/Testimonials'
-import HowItWorks from './Sections/HowItWorks'
-import CallToAction from './Sections/CallToAction'
 import Footer from './Sections/Footer'
-import ScienceSimplified from './Sections/Science'
+
+// 2. Import your full-screen pages
+
+import BlogList from './pages/Resources/Blogs/BlogList'
+
+import Home from './pages/Home'
+import VideoList from './pages/Resources/Videos/VideoList'
 
 function App() {
- 
-
   return (
-    <main className='w-full'>
-      <Navbar/>
-      <Hero />
-      <Philosophy />
-      <Testimonials />
-      <ScienceSimplified />
-      <HowItWorks />
-      <CallToAction />
-      <Footer />
-    </main>
+    <Router>
+      <main className='w-full min-h-screen flex flex-col'>
+        
+        {/* The Navbar stays at the top of EVERY page */}
+        <Navbar />
+
+        {/* The Routes determine which page content to load in the middle */}
+        <div className="flex-grow">
+          <Routes>
+            {/* The root URL loads the Home page stack */}
+            <Route path="/" element={<Home />} />
+            
+            {/* The /blogs URL loads the new BlogList page */}
+            <Route path="/blogs" element={<BlogList />} />
+            <Route path='/videos' element={<VideoList />} />
+          </Routes>
+        </div>
+
+        {/* The Footer stays at the bottom of EVERY page */}
+        <Footer />
+        
+      </main>
+    </Router>
   )
 }
 

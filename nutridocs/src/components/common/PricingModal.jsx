@@ -7,6 +7,7 @@ import React, { useState } from 'react';
 const CheckMark = ({ isDocTheme }) => (
   <div className={`w-[20px] h-[20px] shrink-0 rounded-full flex items-center justify-center ${isDocTheme ? "bg-[#eaf4ea]" : "bg-[#eaf5f5]"}`}>
     <svg width="10" height="10" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+      {/* CHANGED: Stroke color is now #67b15f for the green theme to match the design */}
       <path d="M2 6L5 9L10 3" stroke={isDocTheme ? "#67b15f" : "#67bcc1"} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
     </svg>
   </div>
@@ -32,11 +33,15 @@ export default function PricingModal({ isOpen, onClose, theme = "default" }) {
   // --- Dynamic Theme Colors ---
   const isDocTheme = theme === "documents";
   
-  const headerBg = isDocTheme ? "bg-[#4a5d4f]" : "bg-[#67bcc1]";
-  const accentBg = isDocTheme ? "bg-[#67b15f]" : "bg-[#67bcc1]";
+  // CHANGED: Applied your linear gradient to the Header and the Accent Backgrounds!
+  const headerBg = isDocTheme ? "bg-gradient-to-b from-[#67b15f] to-[#4a5d4f]" : "bg-[#67bcc1]";
+  const accentBg = isDocTheme ? "bg-gradient-to-b from-[#67b15f] to-[#4a5d4f]" : "bg-[#67bcc1]";
+  
   const accentText = isDocTheme ? "text-[#67b15f]" : "text-[#67bcc1]";
   const accentBorder = isDocTheme ? "border-[#67b15f]" : "border-[#67bcc1]";
-  const accentHover = isDocTheme ? "hover:bg-[#569c4f]" : "hover:bg-[#5aa8ad]";
+  
+  // CHANGED: Used hover:opacity-90 for the gradient so it safely darkens on hover without breaking the gradient
+  const accentHover = isDocTheme ? "hover:opacity-90" : "hover:bg-[#5aa8ad]";
 
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/50 backdrop-blur-sm transition-opacity">
@@ -45,7 +50,7 @@ export default function PricingModal({ isOpen, onClose, theme = "default" }) {
       <div className="relative w-full max-w-[1000px] bg-[#f8fafc] rounded-[32px] overflow-hidden shadow-2xl flex flex-col animate-in fade-in zoom-in duration-300">
         
         {/* --- Header Section (Dynamic Background) --- */}
-        <div className={`${headerBg} px-10 py-10 text-white relative transition-colors duration-300`}>
+        <div className={`${headerBg} px-10 py-10 text-white relative transition-all duration-300`}>
           <button 
             onClick={onClose} 
             className="absolute top-6 right-6 w-[40px] h-[40px] bg-white/20 rounded-full flex items-center justify-center hover:bg-white/30 transition text-xl"
@@ -77,7 +82,7 @@ export default function PricingModal({ isOpen, onClose, theme = "default" }) {
               <span className="font-libre-baskerville text-[48px] leading-none text-[#6b6b6b]">$0</span>
               <span className="font-inter text-[14px] text-gray-500">/ <br/>forever</span>
             </div>
-            <button className={`w-full py-3 rounded-full font-inter font-semibold mb-6 transition-colors duration-300 ${selectedPlan === 'Free' ? `${accentBg} text-white shadow-md` : 'bg-[#e5e7eb] text-[#6b6b6b]'}`}>
+            <button className={`w-full py-3 rounded-full font-inter font-semibold mb-6 transition-all duration-300 ${selectedPlan === 'Free' ? `${accentBg} text-white shadow-md` : 'bg-[#e5e7eb] text-[#6b6b6b]'}`}>
               {selectedPlan === 'Free' ? 'Current Plan' : 'Select Free'}
             </button>
             <ul className="flex flex-col gap-[14px] font-inter text-[15px] text-[#2a2a2a]">
@@ -98,7 +103,7 @@ export default function PricingModal({ isOpen, onClose, theme = "default" }) {
             onClick={() => setSelectedPlan("Premium")}
             className={`bg-white rounded-[24px] p-6 flex flex-col relative cursor-pointer transition-all duration-300 ${selectedPlan === "Premium" ? `border-[3px] ${accentBorder} shadow-lg transform -translate-y-4` : 'border border-gray-200 hover:border-gray-300'}`}
           >
-            <div className={`absolute -top-4 left-1/2 -translate-x-1/2 ${accentBg} text-white px-4 py-1 rounded-full text-[12px] font-bold font-inter tracking-wide shadow-sm transition-colors duration-300 whitespace-nowrap`}>
+            <div className={`absolute -top-4 left-1/2 -translate-x-1/2 ${accentBg} text-white px-4 py-1 rounded-full text-[12px] font-bold font-inter tracking-wide shadow-sm transition-all duration-300 whitespace-nowrap`}>
               ✨ Most Popular
             </div>
             <h3 className="font-libre-baskerville text-[32px] text-[#2a2a2a] leading-none mb-2 mt-2">Premium</h3>
@@ -107,7 +112,7 @@ export default function PricingModal({ isOpen, onClose, theme = "default" }) {
               <span className={`font-libre-baskerville text-[48px] leading-none ${accentText} transition-colors duration-300`}>$19</span>
               <span className="font-inter text-[14px] text-gray-500">/ per <br/>month</span>
             </div>
-            <button className={`w-full py-3 rounded-full font-inter font-semibold mb-6 transition-colors duration-300 shadow-md ${selectedPlan === 'Premium' ? `${accentBg} text-white ${accentHover}` : 'bg-[#e5e7eb] text-[#6b6b6b]'}`}>
+            <button className={`w-full py-3 rounded-full font-inter font-semibold mb-6 transition-all duration-300 shadow-md ${selectedPlan === 'Premium' ? `${accentBg} text-white ${accentHover}` : 'bg-[#e5e7eb] text-[#6b6b6b]'}`}>
               {selectedPlan === 'Premium' ? 'Upgrade Now' : 'Select Premium'}
             </button>
             <ul className="flex flex-col gap-[14px] font-inter text-[15px] text-[#2a2a2a]">
@@ -131,7 +136,7 @@ export default function PricingModal({ isOpen, onClose, theme = "default" }) {
               <span className="font-libre-baskerville text-[48px] leading-none text-[#2a2a2a]">$49</span>
               <span className="font-inter text-[14px] text-gray-500">/ per <br/>month</span>
             </div>
-            <button className={`w-full py-3 rounded-full font-inter font-semibold mb-6 transition-colors duration-300 shadow-md ${selectedPlan === 'Pro' ? `bg-[#4a5d4f] text-white hover:bg-[#3c4b40]` : 'bg-[#e5e7eb] text-[#6b6b6b]'}`}>
+            <button className={`w-full py-3 rounded-full font-inter font-semibold mb-6 transition-all duration-300 shadow-md ${selectedPlan === 'Pro' ? `bg-[#4a5d4f] text-white hover:bg-[#3c4b40]` : 'bg-[#e5e7eb] text-[#6b6b6b]'}`}>
               {selectedPlan === 'Pro' ? 'Go Pro' : 'Select Pro'}
             </button>
             <ul className="flex flex-col gap-[14px] font-inter text-[15px] text-[#2a2a2a]">

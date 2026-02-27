@@ -12,6 +12,8 @@ import BlogList from './pages/Resources/Blogs/BlogList'
 import Home from './pages/Home'
 import VideoList from './pages/Resources/Videos/VideoList'
 import DocumentList from './pages/Resources/Documents/DocumentList'
+import ContactUs from './pages/ContactUs'
+import Team from './pages/Team'
 
 function App() {
   return (
@@ -31,6 +33,9 @@ function App() {
             <Route path="/blogs" element={<BlogList />} />
             <Route path='/videos' element={<VideoList />} />
             <Route path='/documents' element={<DocumentList />} />
+
+            <Route path='/contact' element={<ContactUs />} />
+            <Route path='/team' element={<Team />} />
           </Routes>
         </div>
 

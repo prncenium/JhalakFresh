@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import NewsletterCTA from '../../../components/common/NewsletterCTA';
 import PageHero from '../../../components/common/PageHero';
 
+
 // ==========================================
 // REUSABLE VIDEO CARD COMPONENT
 // ==========================================
@@ -77,8 +78,9 @@ const VideoCard = ({ title, views, timeAgo, duration, isTrending, isPremium }) =
 export default function VideoList() {
   return (
     <div className="w-full min-h-screen flex flex-col items-center bg-white">
-      
-      <PageHero />
+
+        <PageHero titleColor='text-[#EB6890]' />
+     
 
       <section className="relative z-20 w-full max-w-[1728px] px-[30px] pb-[100px] flex flex-col items-center gap-[40px] -mt-[80px]">
         <div className="w-full max-w-[1534px]">

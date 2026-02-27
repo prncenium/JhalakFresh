@@ -11,6 +11,7 @@ import BlogList from './pages/Resources/Blogs/BlogList'
 
 import Home from './pages/Home'
 import VideoList from './pages/Resources/Videos/VideoList'
+import DocumentList from './pages/Resources/Documents/DocumentList'
 
 function App() {
   return (
@@ -29,6 +30,7 @@ function App() {
             {/* The /blogs URL loads the new BlogList page */}
             <Route path="/blogs" element={<BlogList />} />
             <Route path='/videos' element={<VideoList />} />
+            <Route path='/documents' element={<DocumentList />} />
           </Routes>
         </div>
 

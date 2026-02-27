@@ -1,6 +1,7 @@
 import React from 'react';
 
-export default function PageHero() {
+// CHANGED: Added titleColor prop with a default value of your original dark green
+export default function PageHero({ titleColor = "text-[#4a5d4f]" }) {
   return (
     <section className="relative w-full max-w-[1928px] h-[860px] flex flex-col items-center justify-center overflow-hidden bg-white">
       
@@ -22,7 +23,8 @@ export default function PageHero() {
         </div>
 
         {/* Title */}
-        <h1 className="font-juicy text-[180px] text-[#4a5d4f] leading-[0.67] mb-[106px] tracking-wide">
+        {/* CHANGED: Swapped the hardcoded text-[#4a5d4f] for the dynamic ${titleColor} */}
+        <h1 className={`font-juicy text-[180px] ${titleColor} leading-[0.67] mb-[106px] tracking-wide transition-colors duration-300`}>
           Resources
         </h1>
 

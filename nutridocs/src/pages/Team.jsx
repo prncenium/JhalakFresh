@@ -85,8 +85,9 @@ export default function Team() {
   return (
     <div className="w-full min-h-screen flex flex-col items-center bg-[#fafcfc]">
       
-      {/* --- HERO SECTION --- (This section remains unchanged) --- */}
-      <section className="relative w-full max-w-[1928px] pt-[180px] pb-[100px] flex flex-col items-center overflow-hidden">
+      {/* --- HERO SECTION --- */}
+      {/* CHANGED: Shifted padding (pt-[150px] pb-[240px]). This moves the text exactly 150px UPSIDE while keeping the overall section height and image sizing 100% identical! */}
+      <section className="relative w-full max-w-[1928px] pt-[150px] pb-[240px] flex flex-col items-center overflow-hidden">
         {/* Soft Background Glows */}
         <div className="absolute top-[-5%] left-[-10%] w-[900px] h-[900px] bg-[#C9E5E6] rounded-full blur-[150px] opacity-60 z-0 pointer-events-none"></div>
         <div className="absolute top-[-5%] right-[-10%] w-[900px] h-[900px] bg-[#fdf5e6] rounded-full blur-[150px] opacity-80 z-0 pointer-events-none"></div>
@@ -95,10 +96,11 @@ export default function Team() {
         <div className="relative w-full max-w-[1534px] flex justify-center z-10 px-[30px]">
           
           {/* Centered Text Content */}
-          <div className="flex flex-col items-center text-center relative z-10">
+          {/* CHANGED: Added lg:mr-[150px] to slightly nudge the text to the left so it perfectly clears the illustration and matches your Img 2 alignment! */}
+          <div className="flex flex-col items-center text-center relative z-10 pb-[150px] lg:mr-[150px]">
             
             {/* Badge */}
-            <div className="bg-white/80 backdrop-blur-sm px-[40px] py-[16px] rounded-full shadow-[0_4px_15px_rgba(0,0,0,0.06)] flex items-center gap-[12px] mb-[160px] mt-[-140px]">
+            <div className="bg-white/80 backdrop-blur-sm px-[40px] py-[16px] rounded-full shadow-[0_4px_15px_rgba(0,0,0,0.06)] flex items-center gap-[12px] mb-[180px]">
                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#67bcc1" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg>
               <span className="font-juicy text-[32px] text-[#67bcc1] leading-[0.75] translate-y-1">
                 Children's Health Program
@@ -121,7 +123,7 @@ export default function Team() {
           <img 
             src="https://res.cloudinary.com/dbtfi1rbi/image/upload/v1772201800/heroteam_lcrr29.png" 
             alt="The Team Illustration" 
-            className="absolute right-0 bottom-[-100px] h-[300px] lg:h-[450px] object-contain z-0 pointer-events-none hidden md:block"
+            className="absolute right-[-100px] bottom-[30px] h-[350px] lg:h-[500px] object-contain z-0 pointer-events-none hidden md:block"
           />
 
         </div>

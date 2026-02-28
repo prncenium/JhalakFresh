@@ -14,6 +14,9 @@ import VideoList from './pages/Resources/Videos/VideoList'
 import DocumentList from './pages/Resources/Documents/DocumentList'
 import ContactUs from './pages/ContactUs'
 import Team from './pages/Team'
+import WorkWithUs from './pages/WorkWithUs'
+import BooksPage from './pages/Book'
+
 
 function App() {
   return (
@@ -33,9 +36,10 @@ function App() {
             <Route path="/blogs" element={<BlogList />} />
             <Route path='/videos' element={<VideoList />} />
             <Route path='/documents' element={<DocumentList />} />
-
+            <Route path='/books' element={<BooksPage />} />
             <Route path='/contact' element={<ContactUs />} />
             <Route path='/team' element={<Team />} />
+            <Route path='/work-with-us' element={<WorkWithUs />} />
           </Routes>
         </div>
 

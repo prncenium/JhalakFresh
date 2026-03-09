@@ -66,10 +66,13 @@ export default function RealKidsPlans() {
               </div>
             ))}
           </div>
-          <button className="w-full h-[48px] rounded-full bg-[linear-gradient(to_bottom,_#6cc7cd,_#a3f2f7)] flex items-center justify-center gap-[8px] hover:scale-[1.02] transition-transform shadow-md mt-auto">
-            <span className="font-inter text-[20px] font-semibold text-white">Get Started</span>
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-          </button>
+          <Link 
+  to="/kids-plans" 
+  className="w-full h-[48px] rounded-full bg-[linear-gradient(to_bottom,_#6cc7cd,_#a3f2f7)] flex items-center justify-center gap-[8px] hover:scale-[1.02] transition-transform shadow-md mt-auto"
+>
+  <span className="font-inter text-[20px] font-semibold text-white">Get Started</span>
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+</Link>
         </div>
 
         {/* CARD 2: 30 Day Gut Healing (MOST POPULAR) */}
@@ -110,10 +113,13 @@ export default function RealKidsPlans() {
               </div>
             ))}
           </div>
-          <button className="w-full h-[50px] rounded-full bg-white flex items-center justify-center gap-[8px] hover:scale-[1.02] transition-transform shadow-md mt-auto text-[#4a5d4f]">
-            <span className="font-inter text-[16px] font-semibold">Get Started</span>
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-          </button>
+          <Link 
+  to="/kids-plans" 
+  className="w-full h-[48px] rounded-full bg-[linear-gradient(to_bottom,_#6cc7cd,_#a3f2f7)] flex items-center justify-center gap-[8px] hover:scale-[1.02] transition-transform shadow-md mt-auto"
+>
+  <span className="font-inter text-[20px] font-semibold text-white">Get Started</span>
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+</Link>
         </div>
 
         {/* CARD 3: Guided Disease Reversal */}
@@ -149,10 +155,13 @@ export default function RealKidsPlans() {
               </div>
             ))}
           </div>
-          <button className="w-full h-[48px] rounded-full bg-[linear-gradient(to_bottom,_#6cc7cd,_#a3f2f7)] flex items-center justify-center gap-[8px] hover:scale-[1.02] transition-transform shadow-md mt-auto">
-            <span className="font-inter text-[20px] font-semibold text-white">Get Started</span>
-            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
-          </button>
+          <Link 
+  to="/kids-plans" 
+  className="w-full h-[48px] rounded-full bg-[linear-gradient(to_bottom,_#6cc7cd,_#a3f2f7)] flex items-center justify-center gap-[8px] hover:scale-[1.02] transition-transform shadow-md mt-auto"
+>
+  <span className="font-inter text-[20px] font-semibold text-white">Get Started</span>
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+</Link>
         </div>
 
       </section>
@@ -257,11 +266,14 @@ export default function RealKidsPlans() {
             </div>
 
             {/* Book Consult Button */}
-            <button className="w-full max-w-[231px] mx-auto h-[48px] rounded-full bg-[linear-gradient(to_bottom,_#60d4db,_#d1fcff)] shadow-[0_4px_6px_rgba(0,0,0,0.15)] flex items-center justify-center hover:scale-105 transition-transform mt-auto mb-[210px]">
-              <span className="font-inter text-[20px] font-semibold text-white leading-[1.05]">
-                Book Consult
-              </span>
-            </button>
+            <Link 
+  to="/kids-plans" 
+  className="w-full max-w-[231px] mx-auto h-[48px] rounded-full bg-[linear-gradient(to_bottom,_#60d4db,_#d1fcff)] shadow-[0_4px_6px_rgba(0,0,0,0.15)] flex items-center justify-center hover:scale-105 transition-transform mt-auto mb-[210px]"
+>
+  <span className="font-inter text-[20px] font-semibold text-white leading-[1.05]">
+    Book Consult
+  </span>
+</Link>
 
           </div>
         ))}

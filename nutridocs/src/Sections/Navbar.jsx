@@ -19,9 +19,9 @@ export default function Navbar() {
 
       {/* Navigation Links */}
       <div className="flex items-center gap-8 font-juicy text-[36px] text-black">
-        <a href="/#science" className="hover:text-brand-green transition-colors">Science Simplified</a>
-        <a href="/#pricing" className="hover:text-brand-green transition-colors">Pricing</a>
-        <a href="/#testimonials" className="hover:text-brand-green transition-colors">Testimonials</a>
+        <Link to="/science" className="hover:text-brand-green transition-colors">Science Simplified</Link>
+        <Link to="/pricing" className="hover:text-brand-green transition-colors">Plans</Link>
+        
         
         {/* --- Resources Dropdown Menu --- */}
         <div 
@@ -85,7 +85,7 @@ export default function Navbar() {
 
       {/* Book Now Button */}
       <button className="bg-brand-green text-white font-inter font-semibold text-[20px] px-8 py-3 rounded-full shadow-lg hover:scale-105 transition-transform">
-        Book Now
+        <Link to="/plans" >Book Now</Link>
       </button>
     </nav>
   );

@@ -16,6 +16,12 @@ import ContactUs from './pages/ContactUs'
 import Team from './pages/Team'
 import WorkWithUs from './pages/WorkWithUs'
 import BooksPage from './pages/Book'
+import PlansPage from './pages/PlansPage'
+import AdultPlans from './pages/AdultPlans'
+import KidsPlans from './pages/KidsPlans'
+import RealPlansPage from './pages/RealPlansPage'
+import RealAdultPlans from './pages/RealAdultPlans'
+import RealKidsPlans from './pages/RealKidsPlans'
 
 
 function App() {
@@ -31,6 +37,14 @@ function App() {
           <Routes>
             {/* The root URL loads the Home page stack */}
             <Route path="/" element={<Home />} />
+
+            <Route path='/pricing' element={<RealPlansPage />} />
+            <Route path='/real-adult-plans' element={<RealAdultPlans />} />
+            <Route path='/real-kids-plans' element={<RealKidsPlans />} />
+
+            <Route path='/plans' element={<PlansPage />} />
+            <Route path='adult-plans' element={<AdultPlans />} />
+            <Route path='kids-plans' element={<KidsPlans />} />
             
             {/* The /blogs URL loads the new BlogList page */}
             <Route path="/blogs" element={<BlogList />} />

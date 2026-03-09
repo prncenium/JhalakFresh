@@ -84,7 +84,7 @@ export default function DocumentList() {
     <div className="w-full min-h-screen flex flex-col items-center bg-white">
       
       {/* 1. Hero Section (Pink Title!) */}
-      <PageHero titleColor="text-[#EB6890]" />
+      <PageHero  title='Documents' titleColor="text-[#EB6890]"  />
 
       <section className="relative z-20 w-full max-w-[1728px] px-[30px] pb-[100px] flex flex-col items-center gap-[40px] -mt-[80px]">
         <div className="w-full max-w-[1534px]">

@@ -79,7 +79,7 @@ export default function VideoList() {
   return (
     <div className="w-full min-h-screen flex flex-col items-center bg-white">
 
-        <PageHero titleColor='text-[#EB6890]' />
+        <PageHero title='Videos' titleColor='text-[#EB6890]' />
      
 
       <section className="relative z-20 w-full max-w-[1728px] px-[30px] pb-[100px] flex flex-col items-center gap-[40px] -mt-[80px]">

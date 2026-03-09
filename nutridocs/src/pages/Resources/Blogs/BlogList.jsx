@@ -9,11 +9,11 @@ export default function BlogList() {
     <div className="w-full min-h-screen flex flex-col items-center bg-white">
       
       {/* --- 1. HERO SECTION (Exactly 1728px x 860px) --- */}
-      <PageHero />
+      <PageHero title='Blogs' />
 
       {/* --- 2. BLOG CONTENT AREA --- */}
       {/* Max width set to accommodate the 1655px content area + padding */}
-      <section className="relative z-20 w-full max-w-[1728px] px-[30px] pb-[100px] flex flex-col items-center gap-[40px] -mt-[80px]">
+      <section className="relative z-20 w-full max-w-432 px-[30px] pb-[100px] flex flex-col items-center gap-[40px] -mt-[80px]">
         
         {/* Container to left-align the tabs and featured post perfectly with the grid */}
         <div className="w-full max-w-[1534px]">

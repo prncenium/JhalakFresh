@@ -9,7 +9,7 @@ export default function Navbar() {
   const [isAboutOpen, setIsAboutOpen] = useState(false);
 
   return (
-    <nav className="w-full h-[138px] flex items-center justify-between px-16 bg-white shadow-[0_10px_23.8px_0_rgba(0,0,0,0.05)] relative z-50">
+    <nav className="w-full h-[138px] flex items-center justify-between px-16 bg-white shadow-[0_10px_23.8px_0_rgba(0,0,0,0.05)] sticky top-0 z-[100]">
       
       {/* Logo */}
       <Link to="/" className="flex items-center gap-2 cursor-pointer hover:opacity-80 transition-opacity">

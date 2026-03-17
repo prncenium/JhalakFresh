@@ -1,4 +1,5 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import { useEffect } from 'react' // ADDED: Imported useEffect
+import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom' // ADDED: Imported useLocation
 import './App.css'
 
 // 1. Import your persistent layout components
@@ -6,9 +7,7 @@ import Navbar from './Sections/Navbar'
 import Footer from './Sections/Footer'
 
 // 2. Import your full-screen pages
-
 import BlogList from './pages/Resources/Blogs/BlogList'
-
 import Home from './pages/Home'
 import VideoList from './pages/Resources/Videos/VideoList'
 import DocumentList from './pages/Resources/Documents/DocumentList'
@@ -23,10 +22,30 @@ import RealPlansPage from './pages/RealPlansPage'
 import RealAdultPlans from './pages/RealAdultPlans'
 import RealKidsPlans from './pages/RealKidsPlans'
 
+// ==========================================
+// --- NEW: ScrollToTop Helper Component ---
+// ==========================================
+// This invisible component listens for URL changes and smoothly scrolls the window back to the top.
+function ScrollToTop() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: 'instant' // 'instant' instantly jumps to top. Change to 'smooth' if you prefer an animation!
+    });
+  }, [pathname]);
+
+  return null;
+}
 
 function App() {
   return (
     <Router>
+      {/* ADDED: ScrollToTop must be placed inside the Router so it can track URL changes */}
+      <ScrollToTop />
+      
       <main className='w-full min-h-screen flex flex-col'>
         
         {/* The Navbar stays at the top of EVERY page */}

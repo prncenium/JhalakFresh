@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import ContactHero from '../components/common/ContactHero';
 import NewsletterCTA from '../components/common/NewsletterCTA';
 
@@ -15,7 +16,8 @@ export default function BooksPage() {
        <ContactHero type="books" />
        
        {/* 2. STORY BANNER */}
-       <section className="relative z-20 w-full max-w-[1285px] px-[30px] mt-[-60px] lg:mt-[-80px] mb-[80px]">
+       {/* CHANGED: Restored negative margin to pull this banner up over the Hero background, matching img2 perfectly */}
+       <section className="relative z-20 w-full max-w-[1285px] px-[30px] mt-[-60px] lg:mt-[-80px] mb-[60px]">
          <div className="w-full bg-[#fff] rounded-3xl shadow-[0_8px_10px_-6px_rgba(0,0,0,0.1),_0_20px_25px_-5px_rgba(0,0,0,0.1)] py-[48px] px-[40px] flex flex-col items-center justify-center">
            <h2 className="font-juicy text-[64px] md:text-[96px] text-[#2a2a2a] leading-[0.63] text-center mb-[32px]">
              The Story Behind Nutri Docs
@@ -24,6 +26,37 @@ export default function BooksPage() {
            <div className="w-full max-w-[519px] h-[4px] rounded-full bg-[linear-gradient(to_right,_#67b15f,_#4a5d4f)]"></div>
          </div>
        </section>
+
+       {/* ========================================== */}
+       {/* --- CATEGORY TABS (MOVED BELOW BANNER) --- */}
+       {/* ========================================== */}
+       {/* CHANGED: Moved this section below the banner. 'justify-start' keeps it aligned to the left. */}
+       <div className="relative z-30 w-full max-w-[1500px] px-[30px] flex justify-start mb-[60px]">
+         <div className="w-[564px] h-[79px] bg-white rounded-full shadow-[0_20px_25px_0_rgba(0,0,0,0.1),0_8px_10px_0_rgba(0,0,0,0.1)] flex items-center justify-between px-[13px]">
+           
+           {/* ACTIVE Tab: Books (Teal Pill) */}
+           <div className="w-[154px] h-[51px] bg-[#67bcc1] rounded-full flex items-center justify-center shadow-sm">
+             <span className="font-inter font-semibold text-[20px] text-white leading-[1.35]">Books</span>
+           </div>
+           
+           {/* Link to Videos */}
+           <Link 
+             to="/videos" 
+             className="w-[154px] h-[51px] flex items-center justify-center rounded-full font-inter font-semibold text-[20px] text-[#6b6b6b] hover:text-gray-800 transition"
+           >
+             Videos
+           </Link>
+           
+           {/* Link to Documents */}
+           <Link 
+             to="/documents" 
+             className="w-[154px] h-[51px] flex items-center justify-center rounded-full font-inter font-semibold text-[20px] text-[#6b6b6b] hover:text-gray-800 transition"
+           >
+             Documents
+           </Link>
+
+         </div>
+       </div>
 
        {/* 3. BOOK DETAILS SECTION */}
        <section className="w-full max-w-[1500px] px-[30px] flex flex-col lg:flex-row gap-[60px] lg:gap-[100px] mb-[100px]">
@@ -102,7 +135,7 @@ export default function BooksPage() {
                    </div>
                  )}
                  <div className={`w-[68px] h-[68px] rounded-[14px] flex items-center justify-center shrink-0 mt-[8px] ${selectedFormat === 'Paperback' ? 'bg-[#67bcc1]' : 'bg-[#f8f9f9] border border-gray-100'}`}>
-                   {/* Book SVG restored */}
+                   {/* Book SVG */}
                    <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke={selectedFormat === 'Paperback' ? 'white' : '#888'} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                      <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"></path>
                    </svg>
@@ -128,7 +161,7 @@ export default function BooksPage() {
                    </div>
                  )}
                  <div className={`w-[68px] h-[68px] rounded-[14px] flex items-center justify-center shrink-0 mt-[8px] ${selectedFormat === 'Hardcover' ? 'bg-[#67bcc1]' : 'bg-[#f8f9f9] border border-gray-100'}`}>
-                   {/* Box SVG restored */}
+                   {/* Box SVG */}
                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke={selectedFormat === 'Hardcover' ? 'white' : '#888'} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg>
                  </div>
                  <div className="flex flex-col mt-[8px]">
@@ -152,7 +185,7 @@ export default function BooksPage() {
                    </div>
                  )}
                  <div className={`w-[68px] h-[68px] rounded-[14px] flex items-center justify-center shrink-0 mt-[8px] ${selectedFormat === 'E-Book' ? 'bg-[#67bcc1]' : 'bg-[#f8f9f9] border border-gray-100'}`}>
-                   {/* Book SVG restored */}
+                   {/* Book SVG */}
                    <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke={selectedFormat === 'E-Book' ? 'white' : '#888'} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                      <path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"></path>
                    </svg>
@@ -178,7 +211,7 @@ export default function BooksPage() {
                    </div>
                  )}
                  <div className={`w-[68px] h-[68px] rounded-[14px] flex items-center justify-center shrink-0 mt-[8px] ${selectedFormat === 'Audiobook' ? 'bg-[#67bcc1]' : 'bg-[#f8f9f9] border border-gray-100'}`}>
-                   {/* Headphones SVG restored */}
+                   {/* Headphones SVG */}
                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke={selectedFormat === 'Audiobook' ? 'white' : '#888'} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M3 18v-6a9 9 0 0 1 18 0v6"></path><path d="M21 19a2 2 0 0 1-2 2h-1a2 2 0 0 1-2-2v-3a2 2 0 0 1 2-2h3zM3 19a2 2 0 0 0 2 2h1a2 2 0 0 0 2-2v-3a2 2 0 0 0-2-2H3z"></path></svg>
                  </div>
                  <div className="flex flex-col mt-[8px]">
@@ -236,15 +269,14 @@ export default function BooksPage() {
              </div>
 
              {/* Help Banner */}
-<div className="w-full bg-[#e5f9f8] rounded-2xl py-[24px] px-[32px] flex flex-col xl:flex-row items-start xl:items-center justify-between gap-[20px]">
-  <p className="font-inter text-2xl text-[#4a5d4f] leading-[1.58] m-0">
-    <strong className="font-bold">Need help?</strong> If you face technical issues accessing the book, we'd be happy to share a complimentary copy.
-  </p>
-  {/* The call-to-action link, now positioned slightly lower in the vertical stack on small screens with 'mt-4', and resets on 'xl:' screens with 'xl:mt-0'. This separation creates a clear space between the text at the top and the link below it in the stacked layout, effectively moving them apart vertically as shown in img2. */}
-  <a href="#" className="font-inter text-2xl font-semibold text-[#67bcc1] leading-[1] underline whitespace-nowrap shrink-0 hover:text-[#4a5d4f] transition mt-4 xl:mt-0">
-    Let us know
-  </a>
-</div>
+             <div className="w-full bg-[#e5f9f8] rounded-2xl py-[24px] px-[32px] flex flex-col xl:flex-row items-start xl:items-center justify-between gap-[20px]">
+               <p className="font-inter text-2xl text-[#4a5d4f] leading-[1.58] m-0">
+                 <strong className="font-bold">Need help?</strong> If you face technical issues accessing the book, we'd be happy to share a complimentary copy.
+               </p>
+               <a href="#" className="font-inter text-2xl font-semibold text-[#67bcc1] leading-[1] underline whitespace-nowrap shrink-0 hover:text-[#4a5d4f] transition mt-4 xl:mt-0">
+                 Let us know
+               </a>
+             </div>
 
            </div>
            

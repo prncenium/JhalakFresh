@@ -90,10 +90,10 @@ export default function VideoList() {
             <div className="w-[564px] h-[79px] bg-white rounded-full shadow-[0_20px_25px_0_rgba(0,0,0,0.1),0_8px_10px_0_rgba(0,0,0,0.1)] flex items-center justify-between px-[13px]">
               
               <Link 
-                to="/blogs" 
+                to="/books" 
                 className="w-[154px] h-[51px] flex items-center justify-center rounded-full font-inter font-semibold text-[20px] text-[#6b6b6b] hover:text-gray-800 transition"
               >
-                Blogs
+                Books
               </Link>
               
               <div className="w-[154px] h-[51px] bg-[#67bcc1] rounded-full flex items-center justify-center shadow-sm">

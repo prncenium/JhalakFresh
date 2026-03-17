@@ -10,7 +10,7 @@ export default function RealPlansPage() {
         
         {/* Text to "Pricing", color to pink, added custom text-shadow */}
         <h1 className="font-juicy text-[96px] md:text-[128px] text-[#ed6790] [text-shadow:7px_3px_8.4px_rgba(0,0,0,0.25)] leading-[0.44] mb-[33.5px] text-center">
-          Pricing
+          Plans
         </h1>
         
         {/* Text color to dark gray/black to match snippet */}

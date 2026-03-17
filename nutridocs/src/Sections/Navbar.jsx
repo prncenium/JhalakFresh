@@ -19,7 +19,7 @@ export default function Navbar() {
 
       {/* Navigation Links */}
       <div className="flex items-center gap-8 font-juicy text-[36px] text-black">
-        <Link to="/science" className="hover:text-brand-green transition-colors">Science Simplified</Link>
+        <Link to="/science" className="hover:text-brand-green transition-colors">TruthLab</Link>
         <Link to="/pricing" className="hover:text-brand-green transition-colors">Plans</Link>
         
         
@@ -29,7 +29,7 @@ export default function Navbar() {
           onMouseEnter={() => setIsResourcesOpen(true)}
           onMouseLeave={() => setIsResourcesOpen(false)}
         >
-          <span>Resources</span>
+          <span>Library</span>
           <ChevronDown 
             size={20} 
             className={`mt-2 transition-transform duration-300 ${isResourcesOpen ? 'rotate-180' : ''}`} 
@@ -43,10 +43,10 @@ export default function Navbar() {
                 exit={{ opacity: 0, y: 10 }}
                 className="absolute top-full left-0 mt-4 bg-white shadow-xl rounded-xl py-4 px-6 flex flex-col gap-4 font-juicy text-[28px] text-black w-48"
               >
-                <Link to="/blogs" className="hover:text-brand-green transition-colors">Blogs</Link>
+                <Link to="/books" className="hover:text-brand-green transition-colors">Books</Link>
                 <Link to="/videos" className="hover:text-brand-green transition-colors">Videos</Link>
                 <Link to="/documents" className="hover:text-brand-green transition-colors">Documents</Link>
-                <Link to="/books" className="hover:text-brand-green transition-colors">Books</Link>
+                
               </motion.div>
             )}
           </AnimatePresence>

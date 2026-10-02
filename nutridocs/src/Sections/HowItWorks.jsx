@@ -80,7 +80,7 @@ export default function HowItWorks() {
               number="01" 
               title="Connect" 
               description={<>Book your first consultation and share <br /> your health story.</>} 
-              iconSrc="https://res.cloudinary.com/dbtfi1rbi/image/upload/v1772050027/phone_blplua.png"
+              iconSrc="https://res.cloudinary.com/gitn9iob/image/upload/v1790926735/phone_blplua.png"
               iconBg="bg-[rgba(191,215,153,0.2)]"
               iconSize="w-[40px] h-[40px]" 
             />
@@ -88,7 +88,7 @@ export default function HowItWorks() {
               number="02" 
               title="Discover" 
               description={<>We analyze your lifestyle, habits, and <br /> unique health profile.</>} 
-              iconSrc="https://res.cloudinary.com/dbtfi1rbi/image/upload/v1772050026/z0nrlioiothszngvwuzk.png"
+              iconSrc="https://res.cloudinary.com/gitn9iob/image/upload/v1790926736/z0nrlioiothszngvwuzk.png"
               iconBg="bg-[rgba(103,177,95,0.2)]" 
               iconSize="w-[40px] h-[40px]" 
             />
@@ -96,7 +96,7 @@ export default function HowItWorks() {
               number="03" 
               title="Design" 
               description={<>Receive a personalized nutrition and <br /> wellness plan.</>} 
-              iconSrc="https://res.cloudinary.com/dbtfi1rbi/image/upload/v1772050041/x0p6ix599puj10bul1zg.png"
+              iconSrc="https://res.cloudinary.com/gitn9iob/image/upload/v1790926736/x0p6ix599puj10bul1zg.png"
               iconBg="bg-[rgba(74,93,79,0.2)]" 
               iconSize="w-[32px] h-[32px]" 
             />
@@ -109,8 +109,8 @@ export default function HowItWorks() {
             className="absolute right-[-340px] top-[235px] w-[951px] h-[717px] z-10 pr-[40px]"
           >
             <img 
-              src="https://res.cloudinary.com/dbtfi1rbi/image/upload/v1772047477/IMG_6595_1_afxofa.png" 
-              alt="Health Report Illustration" 
+              src="https://res.cloudinary.com/gitn9iob/image/upload/v1790927721/Consultant_s4a7q9.png"
+              alt="Health Report Illustration"
               className="w-full h-full object-contain drop-shadow-2xl"
             />
           </motion.div>

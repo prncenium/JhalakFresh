@@ -125,18 +125,18 @@ export default function Philosophy() {
           <PhilosophyCard 
             line1="FOOD AS" 
             line2="MEDICINE" 
-            bgImage="https://res.cloudinary.com/dbtfi1rbi/image/upload/v1772029856/FoodAsMedicine_sdbzci.png" 
+            bgImage="https://res.cloudinary.com/gitn9iob/image/upload/v1790927735/FoodAsMedicine_sdbzci.png"
           />
           <PhilosophyCard 
             line1="SUSTAINABLE" 
             line2="LIFE" 
-            bgImage="https://res.cloudinary.com/dbtfi1rbi/image/upload/v1772029856/Sustainable_ded5cv.png" 
+            bgImage="https://res.cloudinary.com/gitn9iob/image/upload/v1790926735/Sustainable_ded5cv.png"
           />
           <PhilosophyCard 
             line1="MIND -" 
             line2="BODY" 
             line3="BALANCE"
-            bgImage="https://res.cloudinary.com/dbtfi1rbi/image/upload/v1772029857/MindBodyBalance_jgijce.png" 
+            bgImage="https://res.cloudinary.com/gitn9iob/image/upload/v1790928613/MindBodyBalance_jgijce.png"
           />
         </motion.div>
 

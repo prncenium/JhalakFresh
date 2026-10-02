@@ -50,12 +50,12 @@ export default function Hero() {
     <section className="relative w-full min-h-[90vh] lg:h-[1110px] flex flex-col items-center justify-center pt-20 pb-32 overflow-hidden">
       
       {/* Background shape placeholder */}
-      <div className="absolute inset-0 z-0 bg-cover bg-bottom " style={{ backgroundImage: "url('https://res.cloudinary.com/dbtfi1rbi/image/upload/v1772046687/ChatGPT_Image_Jan_4_2026_07_09_32_PM_1_yrku6o.png')" }}></div>
+      <div className="absolute inset-0 z-0 bg-cover bg-bottom " style={{ backgroundImage: "url('https://res.cloudinary.com/gitn9iob/image/upload/v1790927715/ChatGPT_Image_Jan_4_2026_07_09_32_PM_1_yrku6o.png')"}}></div>
       <div className="absolute bottom-0 left-0 w-full z-0 pointer-events-none leading-[0]">
         <img 
           // Replace this with your actual Cloudinary link or local path where you saved Vector 1.png
-          src="https://res.cloudinary.com/dbtfi1rbi/image/upload/v1772046545/Vector_1_ai1pw3.png" 
-          alt="Bottom Wave" 
+          src="https://res.cloudinary.com/gitn9iob/image/upload/v1790926736/Vector_1_ai1pw3.png"
+          alt="Bottom Wave"
           className="w-full h-auto object-cover object-top"
         />
       </div>
@@ -118,7 +118,7 @@ export default function Hero() {
         
         {/* --- LEFT SIDE VEGGIES --- */}
         <FoodItem 
-          src="https://res.cloudinary.com/dbtfi1rbi/image/upload/v1772010420/palak_rykrar.png" 
+          src="https://res.cloudinary.com/gitn9iob/image/upload/v1790926733/palak_rykrar.png"
           alt="Small Leaf" 
           delay={0.2} 
           positionClasses="w-[380px] top-[-120px] left-[80px]" 
@@ -126,7 +126,7 @@ export default function Hero() {
         
         {/* Top Left Sliced Peppers & Beans (Capsicum) */}
         <FoodItem 
-          src="https://res.cloudinary.com/dbtfi1rbi/image/upload/v1772010412/capsicum_wwhcti.png" 
+          src="https://res.cloudinary.com/gitn9iob/image/upload/v1790927711/capsicum_wwhcti.png"
           alt="Peppers and Beans" 
           delay={0.2} 
           positionClasses="w-[380px] top-[-30px] left-[-180px]" 
@@ -134,7 +134,7 @@ export default function Hero() {
         
         {/* Top Left Carrot */}
         <FoodItem 
-          src="https://res.cloudinary.com/dbtfi1rbi/image/upload/v1772010413/carrot_v8lxc8.png" 
+          src="https://res.cloudinary.com/gitn9iob/image/upload/v1790927712/carrot_v8lxc8.png"
           alt="Top Left Carrot" 
           delay={0.3} 
           positionClasses="w-[380px] top-[-90px] left-[250px]" 
@@ -142,13 +142,13 @@ export default function Hero() {
 
         {/* Mid Left Fries Cup */}
         <FoodItem 
-          src="https://res.cloudinary.com/dbtfi1rbi/image/upload/v1772010422/fries_zugsdh.png" 
+          src="https://res.cloudinary.com/gitn9iob/image/upload/v1790927738/fries_zugsdh.png"
           alt="Fries Cup" 
           delay={0.4} 
           positionClasses="w-[420px] top-[180px] left-[-250px]" 
         />
         <FoodItem 
-          src="https://res.cloudinary.com/dbtfi1rbi/image/upload/v1772010418/dhaniya_bhs5mq.png" 
+          src="https://res.cloudinary.com/gitn9iob/image/upload/v1790927727/dhaniya_bhs5mq.png"
           alt="Dhaniya" 
           delay={0.4} 
           positionClasses="w-[280px] top-[350px] left-[-50px]" 
@@ -156,7 +156,7 @@ export default function Hero() {
         
         {/* Mid Left Small Leaf (Palak - near 'Stop guessing') */}
         <FoodItem 
-          src="https://res.cloudinary.com/dbtfi1rbi/image/upload/v1772010420/palak_rykrar.png" 
+          src="https://res.cloudinary.com/gitn9iob/image/upload/v1790926733/palak_rykrar.png"
           alt="Small Leaf" 
           delay={0.5} 
           positionClasses="w-[350px] top-[390px] left-[10px]" 
@@ -172,13 +172,13 @@ export default function Hero() {
 
         {/* Bottom Left Carrot */}
         <FoodItem 
-          src="https://res.cloudinary.com/dbtfi1rbi/image/upload/v1772010413/carrot2_qv5oya.png" 
+          src="https://res.cloudinary.com/gitn9iob/image/upload/v1790927713/carrot2_qv5oya.png"
           alt="Bottom Left Carrot" 
           delay={0.7} 
           positionClasses="w-[420px] bottom-[-120px] left-[260px]" 
         />
         <FoodItem 
-          src="https://res.cloudinary.com/dbtfi1rbi/image/upload/v1772010420/palak_rykrar.png" 
+          src="https://res.cloudinary.com/gitn9iob/image/upload/v1790926733/palak_rykrar.png"
           alt="Small Leaf" 
           delay={0.2} 
           positionClasses="w-[250px] bottom-[50px] left-[250px]" 
@@ -186,7 +186,7 @@ export default function Hero() {
 
         {/* Bottom Left Tomato Half */}
         <FoodItem 
-          src="https://res.cloudinary.com/dbtfi1rbi/image/upload/v1772010412/tomato_bbe802.png" 
+          src="https://res.cloudinary.com/gitn9iob/image/upload/v1790926735/tomato_bbe802.png"
           alt="Bottom Left Tomato Half" 
           delay={0.8} 
           positionClasses="w-[240px] bottom-[-170px] left-[40px]" 
@@ -204,7 +204,7 @@ export default function Hero() {
         
         {/* Cabbage */}
         <FoodItem 
-          src="https://res.cloudinary.com/dbtfi1rbi/image/upload/v1772010412/pattaGobhi_alenyv.png" 
+          src="https://res.cloudinary.com/gitn9iob/image/upload/v1790926733/pattaGobhi_alenyv.png"
           alt="Cabbage" 
           delay={0.5} 
           positionClasses="w-[300px] bottom-[-150px] left-[75%] -translate-x-1/2" 
@@ -216,7 +216,7 @@ export default function Hero() {
         
         {/* Top Right Broccoli Bowl */}
         <FoodItem 
-          src="https://res.cloudinary.com/dbtfi1rbi/image/upload/v1772010413/broculi_yknuwr.png" 
+          src="https://res.cloudinary.com/gitn9iob/image/upload/v1790927398/broculi_yknuwr.png"
           alt="Broccoli Bowl" 
           delay={0.3} 
           positionClasses="w-[350px] top-[-50px] right-[-180px]" 
@@ -241,7 +241,7 @@ export default function Hero() {
         
         {/* Large Tomato Slice */}
         <FoodItem 
-          src="https://res.cloudinary.com/dbtfi1rbi/image/upload/v1772010412/tomato2_veosyl.png" 
+          src="https://res.cloudinary.com/gitn9iob/image/upload/v1790926736/tomato2_veosyl.png"
           alt="Large Tomato Slice" 
           delay={0.5} 
           positionClasses="w-[250px] top-[340px] right-[120px]" 
@@ -249,7 +249,7 @@ export default function Hero() {
         
         {/* Mid Right Leafy Green (Dhaniya / Cilantro) */}
         <FoodItem 
-          src="https://res.cloudinary.com/dbtfi1rbi/image/upload/v1772010412/dhaniya2_pzz4tw.png" 
+          src="https://res.cloudinary.com/gitn9iob/image/upload/v1790927728/dhaniya2_pzz4tw.png"
           alt="Leafy Green" 
           delay={0.6} 
           positionClasses="w-[550px] bottom-[120px] right-[-350px]" 
@@ -257,7 +257,7 @@ export default function Hero() {
         
         {/* Bottom Right Eggs/Chicken/Avocado Plate */}
         <FoodItem 
-          src="https://res.cloudinary.com/dbtfi1rbi/image/upload/v1772010417/eggs_kb3zzl.png" 
+          src="https://res.cloudinary.com/gitn9iob/image/upload/v1790927734/eggs_kb3zzl.png"
           alt="Eggs Plate" 
           delay={0.7} 
           positionClasses="w-[300px] bottom-[240px] right-[150px]" 

@@ -42,7 +42,7 @@ export default function NewsletterCTA({
 
             {/* Floating Illustration on the Right */}
             <img 
-              src="https://res.cloudinary.com/dbtfi1rbi/image/upload/v1772201443/bottomteam_hvb9av.png" 
+              src="https://res.cloudinary.com/gitn9iob/image/upload/v1790927398/bottomteam_hvb9av.png"
               alt="Join Our Team Illustration" 
               className="absolute h-[300px] lg:h-[450px] xl:h-[550px] object-contain pointer-events-none hidden lg:block"
               style={{ right: '-140px', bottom: '-140px' }} 

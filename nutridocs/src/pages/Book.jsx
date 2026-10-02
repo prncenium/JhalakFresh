@@ -64,7 +64,7 @@ export default function BooksPage() {
          {/* LEFT COLUMN: Book Image */}
          <div className="w-full lg:w-[450px] flex justify-center lg:justify-end items-start shrink-0 pt-[20px]">
            <img 
-             src="https://res.cloudinary.com/dbtfi1rbi/image/upload/v1772265027/book_dfa49i.png" 
+             src="https://res.cloudinary.com/gitn9iob/image/upload/v1790927338/book_dfa49i.png"
              alt="Driving to Flying Book" 
              className="w-[350px] xl:w-[450px] h-auto object-contain drop-shadow-2xl transition-transform duration-300 hover:scale-105" 
            />

@@ -96,7 +96,7 @@ export default function WorkWithUs() {
             </button>
           </div>
           {/* IMAGE PLACEHOLDER (Right aligned) */}
-          <img src="https://res.cloudinary.com/dbtfi1rbi/image/upload/v1772230501/Participant1_lk8h1g.png" alt="Participant Illustration" className="absolute right-[-90px] bottom-[-90px] w-[320px] h-auto object-contain z-20 pointer-events-none"  />
+          <img src="https://res.cloudinary.com/gitn9iob/image/upload/v1790926734/Participant1_lk8h1g.png" alt="Participant Illustration" className="absolute right-[-90px] bottom-[-90px] w-[320px] h-auto object-contain z-20 pointer-events-none"  />
         </div>
 
         {/* --- CARD 2: CONSULTANT (Image Left) --- */}
@@ -137,7 +137,7 @@ export default function WorkWithUs() {
             </button>
           </div>
           {/* IMAGE PLACEHOLDER (Left aligned) */}
-          <img src="https://res.cloudinary.com/dbtfi1rbi/image/upload/v1772229326/Consultant_s4a7q9.png" alt="Consultant Illustration" className="absolute left-[-80px] bottom-[-60px] w-[300px] h-auto object-contain z-20 pointer-events-none"  />
+          <img src="https://res.cloudinary.com/gitn9iob/image/upload/v1790927721/Consultant_s4a7q9.png" alt="Consultant Illustration" className="absolute left-[-80px] bottom-[-60px] w-[300px] h-auto object-contain z-20 pointer-events-none"  />
         </div>
         {/* --- CARD 3: PARTNER (Image Right) --- */}
         <div className="relative w-full bg-[linear-gradient(to_bottom,_#fff,_#e8faf9)] border-2 border-[rgba(0,147,156,0.62)] rounded-[32px] p-[50px] shadow-[0_8px_10px_-6px_rgba(0,0,0,0.1),_0_20px_25px_-5px_rgba(0,0,0,0.1)] overflow-visible">
@@ -207,7 +207,7 @@ export default function WorkWithUs() {
             </button>
           </div>
           {/* IMAGE PLACEHOLDER (Right aligned) */}
-          <img src="https://res.cloudinary.com/dbtfi1rbi/image/upload/v1772229327/Partner_j4jqyr.png" alt="Partner Illustration" className="absolute right-[-40px] bottom-[20px] w-[450px] h-auto object-contain z-20 pointer-events-none"  />
+          <img src="https://res.cloudinary.com/gitn9iob/image/upload/v1790926734/Partner_j4jqyr.png" alt="Partner Illustration" className="absolute right-[-40px] bottom-[20px] w-[450px] h-auto object-contain z-20 pointer-events-none"  />
         </div>
 
         </section>

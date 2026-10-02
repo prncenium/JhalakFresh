@@ -121,7 +121,7 @@ export default function Team() {
 
           {/* Floating Illustration on the Right */}
           <img 
-            src="https://res.cloudinary.com/dbtfi1rbi/image/upload/v1772201800/heroteam_lcrr29.png" 
+            src="https://res.cloudinary.com/gitn9iob/image/upload/v1790930626/heroteam_lcrr29.png"
             alt="The Team Illustration" 
             className="absolute right-[-100px] bottom-[30px] h-[350px] lg:h-[500px] object-contain z-0 pointer-events-none hidden md:block"
           />
@@ -154,7 +154,7 @@ export default function Team() {
                 </p>
               </>
             }
-            imageSrc="https://res.cloudinary.com/dbtfi1rbi/image/upload/v1772201583/Mithra_sb9hju.png" 
+            imageSrc="https://res.cloudinary.com/gitn9iob/image/upload/v1790930566/Mithra_sb9hju.png"
             isTeal={true}
           />
           {/* Dr. Ved - White, Image Left */}
@@ -181,7 +181,7 @@ export default function Team() {
                 </p>
               </>
             }
-            imageSrc="https://res.cloudinary.com/dbtfi1rbi/image/upload/v1772201483/Ved_qrqgnq.png" 
+            imageSrc="https://res.cloudinary.com/gitn9iob/image/upload/v1790930454/Ved_qrqgnq.png"
             isTeal={false}
             isImageLeft={true} /* <--- This triggers the image on the left! */
           />
@@ -208,7 +208,7 @@ export default function Team() {
                 </p>
               </>
             }
-            imageSrc="https://res.cloudinary.com/dbtfi1rbi/image/upload/v1772201465/shamal_l5kmwc.png" 
+            imageSrc="https://res.cloudinary.com/gitn9iob/image/upload/v1790930975/shamal_l5kmwc.png"
             isTeal={true}
           />
           {/* Dr. Akhil - White, Image Left */}
@@ -233,7 +233,7 @@ export default function Team() {
                 </p>
               </>
             }
-            imageSrc="https://res.cloudinary.com/dbtfi1rbi/image/upload/v1772201444/Akhil_neraxj.png" 
+            imageSrc="https://res.cloudinary.com/gitn9iob/image/upload/v1790927337/Akhil_neraxj.png"
             isTeal={false}
             isImageLeft={true} /* <--- This forces the image to the left! */
           />
@@ -268,7 +268,7 @@ export default function Team() {
                 </p>
               </>
             }
-            imageSrc="https://res.cloudinary.com/dbtfi1rbi/image/upload/v1772201443/chinmayi_p6nxvj.png" 
+            imageSrc="https://res.cloudinary.com/gitn9iob/image/upload/v1790927720/chinmayi_p6nxvj.png"
             isTeal={true}
             imgClass="object-cover" /* <--- This zooms the image out and matches the photo's wall background color! */
             customHeight="xl:h-[774px]"
@@ -292,7 +292,7 @@ export default function Team() {
                 </p>
               </>
             }
-            imageSrc="https://res.cloudinary.com/dbtfi1rbi/image/upload/v1772201443/karthika_ziwu7g.png" 
+            imageSrc="https://res.cloudinary.com/gitn9iob/image/upload/v1790930479/karthika_ziwu7g.png"
             isTeal={false}
             isImageLeft={true} /* <--- This forces the image to the left side! */
             customHeight="xl:h-[774px]"

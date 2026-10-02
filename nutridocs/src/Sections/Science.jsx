@@ -33,7 +33,7 @@ export default function ScienceSimplified() {
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 1.5, ease: "easeOut" }}
-            src="https://res.cloudinary.com/dbtfi1rbi/image/upload/v1772090343/Ellipse_1_pfsrnh.png" 
+            src="https://res.cloudinary.com/gitn9iob/image/upload/v1790927735/Ellipse_1_pfsrnh.png"
             alt="Green Background Texture" 
             className="w-full h-full object-cover rounded-full"
           />
@@ -41,7 +41,7 @@ export default function ScienceSimplified() {
 
         {/* 1. CENTRAL HUMAN BODY IMAGE (Static) */}
         <img 
-          src="https://res.cloudinary.com/dbtfi1rbi/image/upload/v1772090343/body_ypmih9.png" 
+          src="https://res.cloudinary.com/gitn9iob/image/upload/v1790927339/body_ypmih9.png"
           alt="Human Anatomy" 
           className="absolute bottom-[-180px] left-1/2 -translate-x-1/2 h-[1000px] w-[950px] object-contain z-10"
         />
@@ -50,21 +50,21 @@ export default function ScienceSimplified() {
         
         {/* Sun/UV Elements */}
         <img 
-          src="https://res.cloudinary.com/dbtfi1rbi/image/upload/v1772090544/Sun_cwgkns.png" 
+          src="https://res.cloudinary.com/gitn9iob/image/upload/v1790926735/Sun_cwgkns.png"
           alt="UV Rays" 
           className="absolute top-[-60px] left-[300px] w-[180px] object-contain z-20"
         />
 
         {/* Unhealthy Food 1 (Pizza/Meat) */}
         <img 
-          src="https://res.cloudinary.com/dbtfi1rbi/image/upload/v1772090544/pizza_zhemum.png" 
+          src="https://res.cloudinary.com/gitn9iob/image/upload/v1790926734/pizza_zhemum.png"
           alt="Processed Food" 
           className="absolute top-[32%] left-[12%] w-[240px] object-contain z-20"
         />
 
         {/* Unhealthy Food 2 (Burger/Donut/Drink) */}
         <img 
-          src="https://res.cloudinary.com/dbtfi1rbi/image/upload/v1772090544/pizza_1_ufmcxa.png" 
+          src="https://res.cloudinary.com/gitn9iob/image/upload/v1790926735/pizza_1_ufmcxa.png"
           alt="Junk Food" 
           className="absolute top-[55%] left-[6%] w-[250px] object-contain z-20"
         />
@@ -72,7 +72,7 @@ export default function ScienceSimplified() {
         {/* Smoking */}
         <div className="absolute bottom-[14%] left-[20%] z-20 flex flex-col items-center gap-[5px]">
           <img 
-            src="https://res.cloudinary.com/dbtfi1rbi/image/upload/v1772090466/ciggi_pslxsr.png" 
+            src="https://res.cloudinary.com/gitn9iob/image/upload/v1790927720/ciggi_pslxsr.png"
             alt="Smoking" 
             className="w-[170px] object-contain"
           />
@@ -84,7 +84,7 @@ export default function ScienceSimplified() {
         
         {/* Skin Disorder */}
         <div className="absolute top-[0px] right-[23%] w-[160px] z-20 flex flex-col items-center gap-[12px]">
-          <img src="https://res.cloudinary.com/dbtfi1rbi/image/upload/v1772090379/cake_i7lwkj.png" alt="Skin Disorder" className="w-full h-full object-contain rounded-full" />
+          <img src="https://res.cloudinary.com/gitn9iob/image/upload/v1790927399/cake_i7lwkj.png" alt="Skin Disorder" className="w-full h-full object-contain rounded-full" />
           <motion.span 
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -98,7 +98,7 @@ export default function ScienceSimplified() {
 
         {/* Gut Disease */}
         <div className="absolute top-[28%] right-[14%] w-[160px] z-20 flex flex-col items-center gap-[12px]">
-          <img src="https://res.cloudinary.com/dbtfi1rbi/image/upload/v1772090343/intestine_t8tept.png" alt="Gut Disease" className="w-full h-full object-contain" />
+          <img src="https://res.cloudinary.com/gitn9iob/image/upload/v1790928787/intestine_t8tept.png" alt="Gut Disease" className="w-full h-full object-contain" />
           <motion.span 
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -112,7 +112,7 @@ export default function ScienceSimplified() {
 
         {/* Diabetes */}
         <div className="absolute top-[57%] right-[7%] z-20 flex flex-col items-center gap-[12px]">
-          <img src="https://res.cloudinary.com/dbtfi1rbi/image/upload/v1772090342/blood_iutc6q.png" alt="Diabetes" className="w-full h-full object-contain" />
+          <img src="https://res.cloudinary.com/gitn9iob/image/upload/v1790927338/blood_iutc6q.png" alt="Diabetes" className="w-full h-full object-contain" />
           <motion.span 
             initial={{ opacity: 0, x: 50 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -161,7 +161,7 @@ export default function ScienceSimplified() {
           
           {/* Small decorative leaf icon attached to the right card */}
           <img 
-            src="https://res.cloudinary.com/dbtfi1rbi/image/upload/v1772090342/tsktviuycedqkknwtzow.png" 
+            src="https://res.cloudinary.com/gitn9iob/image/upload/v1790926736/tsktviuycedqkknwtzow.png"
             alt="Leaf" 
             className="absolute bottom-[10px] right-[-60px] w-[40px] object-contain"
           />

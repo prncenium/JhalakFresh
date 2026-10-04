@@ -19,7 +19,6 @@ export default function Navbar() {
 
       {/* Navigation Links */}
       <div className="flex items-center gap-8 font-juicy text-[36px] text-black">
-        <Link to="/science" className="hover:text-brand-green transition-colors">TruthLab</Link>
         <Link to="/pricing" className="hover:text-brand-green transition-colors">Plans</Link>
         
         
